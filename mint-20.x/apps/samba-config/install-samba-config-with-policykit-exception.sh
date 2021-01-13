@@ -81,6 +81,11 @@ startDir=$(pwd);
 tmpDir=$(mktemp -d /tmp/XXX);
 cd "${tmpDir}";
 
+# install dependencies for python- packages below
+# these packages are available in Ubuntu 20.04
+echo "Installing Python GTK dependencies via apt..."
+sudo apt-get install -y libglade2-0 python-cairo python-gobject-2
+
 echo "Download DEB files for system-config-samba and legacy depends ...";
 wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-5.1ubuntu2_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-glade2_2.24.0-5.1ubuntu2_amd64.deb
