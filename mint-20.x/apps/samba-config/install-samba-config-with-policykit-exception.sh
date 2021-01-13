@@ -82,8 +82,8 @@ tmpDir=$(mktemp -d /tmp/XXX);
 cd "${tmpDir}";
 
 echo "Download DEB files for system-config-samba and legacy depends ...";
-wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-6_amd64.deb
-wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-glade2_2.24.0-6_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-5.1ubuntu2_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-glade2_2.24.0-5.1ubuntu2_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/libu/libuser/python-libuser_0.62~dfsg-0.1ubuntu2_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/s/system-config-samba/system-config-samba_1.2.63-0ubuntu6_all.deb
 
